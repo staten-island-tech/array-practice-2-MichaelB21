@@ -74,17 +74,34 @@ const titles = [
   "Little Women",
 ];
 
-//Array of authors and the book they wrote
-//"--- wrote --- in ---"
+const publishDate = publishDate.slice().sort((a, b) => b.date - a.date);
 
-//Sort books from oldest to most recent
+array.sort(function(a, b){
+  var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase();
+  if (nameA < nameB)
+   return -1;
+  if (nameA > nameB)
+   return 1;
+  return 0; 
+ });
 
-//sort books alphabetically
+ authorFirst.indexOf("War and Peace");
+ authorLast.indexOf("War and Peace");
 
-//Find who wrote War and Peace
+ let publishDate = 0;
+for (const publishDate of books) {
+if (obj.status === '>1900') counter++;
+console.log(counter); 
+}
 
-//how many books were written before 1900?
+let publishDate = 0;
+for (const publishDate of books) {
+if (obj.status === '<1900') counter++;
+console.log(counter); 
+}
 
-//was there at least one book published within the last 100 years?
-
-//was every book published within the last 100 years?
+let publishDate = 0;
+for (const publishDate of books) {
+if (obj.status === '<1900') 
+console.log(counter); 
+}
